@@ -1,13 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>CRT Registeration</title>
   </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+  <body class="bg-slate-100 text-slate-900 flex flex-col">
+    <header>
+      <h1 class="p-2 bg-gray-800 text-center text-3xl font-bold">
+        CRT Registeration
+      </h1>
+    </header>
+    <main class="flex w-full min-h-screen h-full p-4 bg-slate-300">
+      <form class="flex flex-1 justify-center gap-4 flex-wrap">
+        <div class="w-[80%] min-w-64 h-fit max-w-96 rounded-lg p-8 bg-slate-100">
+          <label for="fullName">Full Name:</label><br>
+          <input type="text" id="fullName" name="fullName" placeholder="Full Name" class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4" required /><br />
+
+          <label for="dob">Date of Birth:</label><br>
+          <input type="date" id="dob" name="dob" class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4" required /><br />
+
+          <label for="gender">Gender:</label><br>
+          <select id="gender" name="gender" class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4" required>
+            <option value="" disabled selected>Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option></select
+          ><br />
+
+          <label for="contactNumber">Contact Number:</label><br>
+          <input
+            type="tel"
+            id="contactNumber"
+            name="contactNumber" placeholder="Contact Number" class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4"
+            required
+          /><br />
+
+          <label for="email">Email Address:</label><br>
+          <input type="email" id="email" name="email" placeholder="Email" class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4" required /><br />
+
+          <label for="street">Street:</label><br>
+          <input type="text" id="street" name="street" placeholder="Address" class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4" required /><br />
+
+          <label for="city">City:</label><br>
+          <input type="text" id="city" name="city" placeholder="City" class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4" required /><br />
+
+          <label for="state">State:</label><br>
+          <input type="text" id="state" name="state" placeholder="State" class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4" required /><br />
+
+          <label for="zip">Zip Code:</label><br>
+          <input type="text" id="zip" name="zip" placeholder="Eg: 400001" class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4" required /><br />
+        </div>
+        <div class="w-[80%] min-w-64 max-w-96 h-fit rounded-lg p-8 bg-slate-100">
+          <label for="institution">Current Institution:</label><br>
+          <input type="text" id="institution" name="institution" placeholder="Institution" class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4" required /><br />
+
+          <label for="course">Course/Program:</label><br>
+          <input type="text" id="course" name="course" placeholder="Course/Program" class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4" required /><br />
+
+          <label for="year">Year of Study:</label><br>
+          <input type="text" id="year" name="year" placeholder="Year of Study" class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4" required /><br />
+
+          <label for="major">Major/Specialization:</label><br>
+          <input type="text" id="major" name="major" placeholder="Major/Specialization" class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4" required /><br />
+
+          <label for="performance">Academic Performance:</label><br>
+          <input type="text" id="performance" name="performance" placeholder="GPA/Percentage" class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4" required /><br />
+        </div>
+      </form>
+    <main/>
+  </bod>
 </html>
