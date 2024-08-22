@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRT Registeration</title>
+    <link rel="stylesheet" crossorigin href="/assets/index-DFH4Zi26.css">
+  </head>
+  <body class="bg-slate-100 text-slate-900 flex flex-col">
+    <header>
+      <h1 class="p-2 bg-gray-800 text-center text-3xl font-bold">
+        CRT Registeration
+      </h1>
+    </header>
+    <main
+      class="flex justify-center w-full min-h-screen h-full p-4 bg-slate-300"
+    >
+      <form class="flex flex-wrap w-[80%] max-w-4xl gap-2">
+        <div
+          class="md:min-w-[45%] min-w-64 h-fit flex-1  rounded-lg p-8 bg-slate-100"
+        >
+          <h2 class="mb-2 text-cyan-700 font-semibold text-xl">
+            Personal Information
+          </h2>
+          <label for="fullName">Full Name:</label><br />
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            placeholder="Full Name"
+            class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4"
+            required
+          /><br />
+
+          <label for="dob">Date of Birth:</label><br />
+          <input
+            type="date"
+            id="dob"
+            name="dob"
+            class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4"
+            required
+          /><br />
+
+          <label for="gender">Gender:</label><br />
+          <select
+            id="gender"
+            name="gender"
+            class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4"
+            required
+          >
+            <option value="" disabled selected>Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option></select
+          ><br />
+
+          <label for="contactNumber">Contact Number:</label><br />
+          <input
+            type="tel"
+            id="contactNumber"
+            name="contactNumber"
+            placeholder="Contact Number"
+            class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4"
+            required
+          /><br />
+
+          <label for="email">Email Address:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4"
+            required
+          /><br />
+
+          <label for="street">Street:</label><br />
+          <input
+            type="text"
+            id="street"
+            name="street"
+            placeholder="Address"
+            class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4"
+            required
+          /><br />
+
+          <label for="city">City:</label><br />
+          <input
+            type="text"
+            id="city"
+            name="city"
+            placeholder="City"
+            class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4"
+            required
+          /><br />
+
+          <label for="state">State:</label><br />
+          <input
+            type="text"
+            id="state"
+            name="state"
+            placeholder="State"
+            class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4"
+            required
+          /><br />
+
+          <label for="zip">Zip Code:</label><br />
+          <input
+            type="text"
+            id="zip"
+            name="zip"
+            placeholder="Eg: 400001"
+            class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4"
+            required
+          /><br />
+        </div>
+        <div
+          class="md:min-w-[45%] min-w-64  w-auto flex-1 h-fit rounded-lg p-8 bg-slate-100"
+        >
+          <h2 class="mb-2 text-cyan-700 font-semibold text-xl">
+            Academic Information
+          </h2>
+          <label for="institution">Current Institution:</label><br />
+          <input
+            type="text"
+            id="institution"
+            name="institution"
+            placeholder="Institution"
+            class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4"
+            required
+          /><br />
+
+          <label for="course">Course/Program:</label><br />
+          <input
+            type="text"
+            id="course"
+            name="course"
+            placeholder="Course/Program"
+            class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4"
+            required
+          /><br />
+
+          <label for="year">Year of Study:</label><br />
+          <input
+            type="text"
+            id="year"
+            name="year"
+            placeholder="Year of Study"
+            class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4"
+            required
+          /><br />
+
+          <label for="major">Major/Specialization:</label><br />
+          <input
+            type="text"
+            id="major"
+            name="major"
+            placeholder="Major/Specialization"
+            class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4"
+            required
+          /><br />
+
+          <label for="performance">Academic Performance:</label><br />
+          <input
+            type="text"
+            id="performance"
+            name="performance"
+            placeholder="GPA/Percentage"
+            class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4"
+            required
+          /><br />
+        </div>
+        <div
+          class="md:min-w-[45%] min-w-64 flex-1 h-fit rounded-lg p-8 bg-slate-100"
+        >
+          <h2 class="mb-2 text-cyan-700 font-semibold text-xl">
+            Training Preferences
+          </h2>
+          <label for="training-preferences">Training Preferences:</label><br />
+          <input
+            type="text"
+            id="training-preferences"
+            name="training-preferences"
+            placeholder="Eg: Aptitude, Technical Skills, Soft Skills"
+            class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4"
+            required
+          /><br />
+
+          <label for="preferred-modules">Preferred Training Modules:</label
+          ><br />
+          <select
+            id="preferred-modules"
+            name="preferred-modules"
+            class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in outline-none p-2 rounded-lg w-[100%] mb-4"
+            required
+          >
+            <option value="" disabled selected>Select module</option>
+            <option value="aptitude-training">Aptitude Training</option>
+            <option value="technical-skills-training">
+              Technical Skills Training
+            </option>
+            <option value="soft-skills-training">
+              Soft Skills Training
+            </option></select
+          ><br />
+
+          <label for="preferred-schedule">Preferred Training Schedule:</label
+          ><br />
+          <input
+            type="text"
+            id="preferred-schedule"
+            name="preferred-schedule"
+            placeholder="Eg: Weekdays, Weekends"
+            class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4"
+            required
+          /><br />
+
+          <label for="mode-of-training">Mode of Training:</label><br />
+          <input
+            type="text"
+            id="mode-of-training"
+            name="mode-of-training"
+            placeholder="Eg: Online, Offline"
+            class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4"
+            required
+          /><br />
+        </div>
+        <div
+          class="md:min-w-[45%] min-w-64 flex-1 h-fit rounded-lg p-8 bg-slate-100"
+        >
+          <h2 class="mb-2 text-cyan-700 font-semibold text-xl">
+            Job related Information
+          </h2>
+          <label for="internship-experience"
+            >Internship Experience (if any):</label
+          ><br />
+          <input
+            type="text"
+            id="internship-experience"
+            name="internship-experience"
+            placeholder="Eg: Company Name, Duration"
+            class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4"
+            required
+          /><br />
+
+          <label for="part-time-job-experience"
+            >Part-time Job Experience (if any):</label
+          ><br />
+          <input
+            type="text"
+            id="part-time-job-experience"
+            name="part-time-job-experience"
+            placeholder="Eg: Company Name, Duration"
+            class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4"
+            required
+          /><br />
+
+          <label for="relevant-projects-workshops"
+            >Relevant Projects or Workshops Attended:</label
+          ><br />
+          <input
+            type="text"
+            id="relevant-projects-workshops"
+            name="relevant-projects-workshops"
+            placeholder="Eg: Project Title, Workshop Name"
+            class="bg-slate-100 shadow-[inset_2px_2px_7px_rgba(0,0,0,0.1),inset_-3px_-3px_3px_white] focus:shadow-[0px_2px_5px_rgba(2,75,255,0.2)] duration-75 ease-in focus:p-3 outline-none p-2 rounded-lg w-[100%] mb-4"
+            required
+          /><br />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
